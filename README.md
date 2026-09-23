@@ -1,58 +1,40 @@
 ---
-title: "VC Run Trigger Test"
-description: "Publish one page for VC Run Trigger Test that says what it does and how to begin, then split it into a full site once the page grows long."
+title: "MCP server reference status"
+description: "Current status of the MCP tool-reference audit for VC Run Trigger Test."
 status: generated
-version: "0.1"
+version: "0.2"
 ---
 
-<!-- widget:hero size=large -->
+# MCP server reference status
 
-**Documentation**
+This project does not yet contain a verified reference for the MCP server's tools.
 
-# VC Run Trigger Test
+## Audit result
 
-One page is already a documentation site: searchable, linkable, live. Replace the words below with your own and publish — one good page beats an outline of twelve empty ones.
+The connected source is the repository `docsbook-websites/vc-run-trigger-test`. The source currently exposes only `README.md`, and its contents do not define the MCP server's registered tools, arguments, return values, or failure responses.
 
-- [What it does](#what-it-does) {compass}
-- [Who it is for](#who-it-is-for) {users}
-- [How to start](#how-to-start) {rocket}
+The server connection currently reports **172 registered tools**. This documentation contains **0 verified tool entries** matching current source definitions.
 
-<!-- /widget -->
+- Registered tools with a verified documented entry: **0 of 172**
+- Documented tools that no longer exist: **0 found**
+- Tool purposes that can be stated from the source: **none**
 
-## What it does
+These counts are an audit status, not a claim that the tools are undocumented elsewhere.
 
-Two sentences: the job VC Run Trigger Test does, and what people did before it existed. Lead with the outcome — the architecture keeps until a later page.
+## Why the comparison is blocked
 
-## Who it is for
+The repository source has no attached GitHub authorization, so its server definition could not be read. The only available repository file is this page. Without the source definition, this page cannot safely list tool names, argument names or types, return shapes, required fields, defaults, or failure behavior.
 
-Name the reader you want, and the one you do not. A page written for everybody gets skipped by everybody.
+A complete comparison must read the server definition from the connected source and then compare each registered tool with one reference entry. If the source does not state a tool's purpose, the reference must label that purpose as **not stated by the source** rather than infer it.
 
-## How to start
+## What to provide next
 
-Give the first step rather than the whole path: a link, a command, a form. One step is enough to get somebody moving, and the next one can wait until this page has a reader.
+Attach readable access for the connected repository, then rerun the MCP reference audit. The resulting reference should contain one entry per registered tool with:
 
-## What to write next
+1. The exact tool name.
+2. Every current argument, including type, required status, default, and accepted values when stated.
+3. The documented return shape and source-stated meaning.
+4. The source-stated failure responses and conditions.
+5. A clear note wherever the source does not state the tool's purpose, return detail, or failure behavior.
 
-<!-- widget:cards cols=3 -->
-
-- [The three questions](#what-it-does) — Answer them in your own words, in this order {list-checks}
-- [One step to start](#how-to-start) — Replace the placeholder with a real first action {rocket}
-- [Split when it is long](#when-to-split-this-page) — Move a section out once it fills a screen {scissors}
-
-<!-- /widget -->
-
-## When to split this page
-
-Let the page grow until a heading outgrows one screen. That is the signal to move the section into a file of its own and link to it from here, leaving this page as the map rather than the whole territory.
-
-<!-- widget:cta -->
-
-**Publish first, polish second**
-
-## Your page is live the moment you push
-
-Every edit appears at http://localhost:3000/docsbook-websites/vc-run-trigger-test. Nobody has ever improved a page they had not yet published.
-
-[Start with the first question](#what-it-does)
-
-<!-- /widget -->
+Until the source can be read, adding signatures or purposes here would create undocumented assumptions rather than bring the documentation in step with the server.
