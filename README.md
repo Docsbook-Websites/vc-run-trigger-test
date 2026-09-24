@@ -2,7 +2,7 @@
 title: "MCP server reference status"
 description: "Current status of the MCP tool-reference audit for VC Run Trigger Test."
 status: generated
-version: "0.10"
+version: "0.9"
 ---
 
 # MCP server reference status
@@ -19,7 +19,7 @@ The server connection currently reports **172 registered tools**. This documenta
 - Documented tools that no longer exist: **0 found**
 - Tool purposes that can be stated from the source: **none**
 
-These counts are an audit status, not a claim that the tools are undocumented elsewhere. (edit2) (inspector test) Z
+These counts are an audit status, not a claim that the tools are undocumented elsewhere. (edit2) (inspector test)
 
 ## Why the comparison is blocked
 
