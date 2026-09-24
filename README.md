@@ -2,7 +2,7 @@
 title: "MCP server reference status"
 description: "Current status of the MCP tool-reference audit for VC Run Trigger Test."
 status: generated
-version: "0.2"
+version: "0.3"
 ---
 
 # MCP server reference status
@@ -13,7 +13,7 @@ This project does not yet contain a verified reference for the MCP server's tool
 
 The connected source is the repository `docsbook-websites/vc-run-trigger-test`. The source currently exposes only `README.md`, and its contents do not define the MCP server's registered tools, arguments, return values, or failure responses.
 
-The server connection currently reports **172 registered tools**. This documentation contains **0 verified tool entries** matching current source definitions.
+The server connection currently reports **172 registered tools**. This documentation contains **0 verified tool entries** matching current source definitions. (edit test)
 
 - Registered tools with a verified documented entry: **0 of 172**
 - Documented tools that no longer exist: **0 found**
