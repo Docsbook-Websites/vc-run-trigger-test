@@ -2,7 +2,7 @@
 title: "MCP server reference status"
 description: "Current status of the MCP tool-reference audit for VC Run Trigger Test."
 status: generated
-version: "0.17"
+version: "0.18"
 ---
 
 # MCP server reference status
@@ -11,19 +11,19 @@ This project does not yet contain a verified reference for the MCP server's tool
 
 ## Audit result
 
-The connected source is the repository `docsbook-websites/vc-run-trigger-test`. The source currently exposes only `README.md`, and its contents do not define the MCP server's registered tools, arguments, return values, or failure responses.
+The connected source is the repository `docsbook-websites/vc-run-trigger-test`. Its readable file listing currently contains `README.md` and `mcp-reference-audit.md`, but neither file defines the MCP server's registered tools, arguments, return values, or failure responses.
 
-The server connection currently reports **172 registered tools**. This documentation contains **0 verified tool entries** matching current source definitions.
+The server connection currently reports **172 registered tools**. That count is not a readable server definition, so this documentation contains **0 verified tool entries** matching current source definitions.
 
 - Registered tools with a verified documented entry: **0 of 172**
 - Documented tools that no longer exist: **0 found**
 - Tool purposes that can be stated from the source: **none**
 
-These counts are an audit status, not a claim that the tools are undocumented elsewhere.
+These counts describe the blocked audit input. They do not claim that the tools are undocumented elsewhere.
 
 ## Why the comparison is blocked
 
-The repository source has no attached GitHub authorization, so its server definition could not be read. The only available repository file is this page. Without the source definition, this page cannot safely list tool names, argument names or types, return shapes, required fields, defaults, or failure behavior.
+The repository source has no attached GitHub authorization, so its server definition could not be read. The available repository files do not establish tool names, argument names or types, return shapes, required fields, defaults, or failure behavior.
 
 A complete comparison must read the server definition from the connected source and then compare each registered tool with one reference entry. If the source does not state a tool's purpose, the reference must label that purpose as **not stated by the source** rather than infer it.
 
