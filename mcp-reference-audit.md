@@ -2,7 +2,7 @@
 title: "MCP reference audit"
 description: "How to interpret the current MCP tool-reference comparison and its blocked fields."
 status: generated
-version: "0.1"
+version: "0.2"
 ---
 
 # MCP reference audit
@@ -15,9 +15,9 @@ The audit compares the MCP server definition in the connected source with docume
 
 ## Current boundary
 
-The connected repository source has no attached GitHub authorization. It returned a file list containing `README.md` but no readable server-definition file. The repository's README is a generated placeholder and is not a source of truth for the MCP contract.
+The connected repository source has no attached GitHub authorization. Its readable file listing contains `README.md` and `mcp-reference-audit.md`, but no readable server-definition file. Those files cannot establish the MCP contract.
 
-The server catalog currently reports 172 registered tools. No tool entry could be verified against a readable source definition in this project.
+The server connection currently reports 172 registered tools. No tool entry could be verified against a readable source definition in this project.
 
 ## Interpretation rules
 
